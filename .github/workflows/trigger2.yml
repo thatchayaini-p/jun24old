@@ -1,8 +1,12 @@
+# .github/workflows/trigger2.yml
 name: Trigger 2
 
 on:
-  workflow_call:
+  workflow_dispatch:
 
 jobs:
-  call-next:
-    uses: ./.github/workflows/trigger3.yml
+  trigger-next:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Trigger 3
+        run: gh workflow run trigger3.yml

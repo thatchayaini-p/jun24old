@@ -1,0 +1,8 @@
+name: Trigger 2
+
+on:
+  workflow_call:
+
+jobs:
+  call-next:
+    uses: ./.github/workflows/trigger3.yml

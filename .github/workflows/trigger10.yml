@@ -1,11 +1,13 @@
+# .github/workflows/trigger10.yml
 name: Trigger 10
 
 on:
-  workflow_call:
+  workflow_dispatch:
 
 jobs:
-  final-job:
+  end:
     runs-on: ubuntu-latest
     steps:
-      - name: Print complete
-        run: echo "Workflow chain completed 🚀"
+      - name: Final Step
+        run: echo "All workflows completed successfully 🎉"
+

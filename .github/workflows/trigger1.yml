@@ -1,0 +1,10 @@
+name: Trigger 1
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-next:
+    uses: ./.github/workflows/trigger2.yml

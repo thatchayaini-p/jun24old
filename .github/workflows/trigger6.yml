@@ -1,0 +1,8 @@
+name: Trigger 6
+
+on:
+  workflow_call:
+
+jobs:
+  call-next:
+    uses: ./.github/workflows/trigger7.yml

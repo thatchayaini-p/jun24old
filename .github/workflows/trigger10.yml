@@ -1,0 +1,11 @@
+name: Trigger 10
+
+on:
+  workflow_call:
+
+jobs:
+  final-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print complete
+        run: echo "Workflow chain completed 🚀"
